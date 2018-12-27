@@ -90,6 +90,21 @@
 
 /*-------- Start Banner Area ------------*/
 .banner-area {
+    position: relative;
+    .banner-img {
+        position: absolute;
+        top: 0px;
+        z-index: 9;
+        bottom: 0px;
+        margin: auto;
+        left: 0px;
+        display: flex;
+        align-items: center;
+        width: 40%;
+        img {
+            width: 100%;
+        }
+    }
     @media(max-width:1366px){
         margin-top:85px;
     }
@@ -604,7 +619,7 @@ img {
 
 /*============ Start Blog Home Styles  =============*/
 .px-40 {
-    padding: 0px 40px;
+    padding: 0px 15px;
 }
 .top-category-widget-area {
     .content {
@@ -728,7 +743,6 @@ img {
                 line-height: 22px;
                 font-weight: 800;
                 padding-bottom: 20px;
-                font-family: 'Open Sans', sans-serif;
             }
         }
         &:hover {
@@ -835,6 +849,10 @@ img {
     @media(max-width:575px){
         margin:15px;
     }
+}
+
+section#section19 {
+    background: #ccc;
 }
 
 
@@ -1057,10 +1075,97 @@ iframe {
     height: 100%;
 }
 
+/*-------- Show more content Style   -------------*/
+.morecontent span {
+    display: none;
+}
+.morelink {
+    font-size: 14px;
+    color: #f3a306;
+    &:hover {
+        color: #f3a306;
+        opacity: 0.8;
+    }
+}
 
 
 
 @media only screen and (max-width:1199px){  
+    .nav-menu a {
+        font-size: 16px;
+    }
+
+    .px-40 {
+        padding: 0px 10px;
+    }
+
+    .container-fluid-fix p {
+        font-size: 14px;
+        font-family: raleway, sans-serif;
+    }
+
+    .feature-area .feature-right .single-feature p {
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+
+    .feature-area .feature-right .single-feature h4 {
+        font-size: 24px;
+    }
+
+    .top-category-widget-area .content {
+        line-height: 20px;
+    }
+
+    .top-category-widget-area .single-cat-widget .content-details h4 {
+        font-size: 20px;
+    }
+    .single-cta {
+        padding: 10px 50px;
+    }
+
+    .single-cta .title-cta-area-fix {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .single-cta .title-cta-area-fix2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .single-cta .title-cta-area-fix3 {
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .single-cta .title-cta-area {
+        font-size: 18px;
+    }
+
+    .single-cta p {
+        font-size: 14px;
+        font-family: raleway, sans-serif;
+        line-height: 20px;
+        text-align: justify
+    }
+    .pro-content h4 {
+        font-size: 18px;
+    }
+
+    .pro-content p {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 20px;
+    }
+
+    #tab-2 img:last-child {
+        padding-left: 0;
+    }
+
+    .cta-area2 .content p {
+        line-height: 20px;
+    }
 
 }
 
@@ -1117,6 +1222,7 @@ iframe {
     .single-cta p {
         text-align: center !important;
         font-size: 15px !important;
+
     }
 
     .single-cta .title-cta-area-fix {

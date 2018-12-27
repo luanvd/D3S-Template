@@ -63,7 +63,13 @@ $(document).ready(function () {
     } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
         $("#mobile-nav, #mobile-nav-toggle").hide();
     }
+    $("#mobile-nav li a").on('click', function (e) {
+        $("body.mobile-nav-active #mobile-nav").addClass("close-menu");
+        $('body').removeClass('mobile-nav-active');
+        $('#mobile-nav-toggle i').toggleClass('lnr-cross lnr-menu');
+        $('#mobile-body-overly').fadeOut();
 
+    });
     //------- Header Scroll Class  js --------//  
 
     $(window).scroll(function () {
@@ -83,7 +89,7 @@ $(document).ready(function () {
         $(this).addClass('active');
         $("#" + tab_id).addClass('active');
     })
-    
+
     //------- Scroll smooth  js --------// 
     $(function () {
         $('a[href*="#"]:not([href="#"])').click(function () {
@@ -100,7 +106,7 @@ $(document).ready(function () {
         });
     });
 
-   //------- Validation form  js --------// 
+    //------- Validation form  js --------// 
     $(".single-input").keyup(function () {
 
         if ($(this).val() == "") {
@@ -111,5 +117,39 @@ $(document).ready(function () {
         }
     });
 
+    //------- Moaldal  js --------// 
+    $("#myModal").modal('show');
+
+    //------- Show/hile content  js --------// 
+
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "read more >";
+    var lesstext = "read less";
+
+
+    $('.more').each(function () {
+        var content = $(this).html();
+        if (content.length > showChar) {
+
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar);
+            var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+            $(this).html(html);
+        }
+    });
+
+    $(".morelink").click(function () {
+        if ($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
 
 });
