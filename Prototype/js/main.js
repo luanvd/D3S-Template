@@ -100,4 +100,16 @@ $(document).ready(function () {
         });
     });
 
+   //------- Validation form  js --------// 
+    $(".single-input").keyup(function () {
+
+        if ($(this).val() == "") {
+            $(this).css("background", "#f3f3f3");
+        } else {
+            console.log("oke");
+            $(this).css("background", "white");
+        }
+    });
+
+
 });

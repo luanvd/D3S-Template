@@ -3,7 +3,6 @@
 /* =================================== */
 
 .footer-area{
-    background-color:$white;
     h4{
         padding-bottom:10px;
     }
@@ -125,4 +124,79 @@
             color:$white;
         }
     }
+
+
+
+    .form-content {
+        .single-input,
+        .single-textarea {
+            border: 1px solid #ccc;
+            background: #f3f3f3 ;
+            font-family: raleway, sans-serif;
+            color: #666666;
+            &:hover {
+                background: white;
+            }
+        }
+    
+        label {
+            color: #666666; 
+            font-family: raleway, sans-serif;
+        }
+
+        .genric-btn {
+            border-radius: unset;
+            background: #666666;
+            border: 1px solid #666666;
+            padding: 0px 70px;
+            height: 30px;
+            line-height: 30px;
+            font-family: raleway, sans-serif;
+            border-radius: 2px;
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 100;
+            &:hover {
+                background: #141414
+            }
+        }
+
+    }
+}
+
+#contact {
+    padding: 30px 100px;
+}
+
+.form-content {
+    padding-right: 200px;
+}
+
+@media only screen and (max-width: 992px){
+
+    .form-content {
+        padding-right: 0px;
+    }
+
+    #contact {
+        padding: 0px;
+    } 
+
+
+}
+
+@media only screen and (max-width: 767px){
+
+    #contact {
+        padding: 0px;
+    } 
+
+
+    .form-content {
+        padding-right: 0px;
+        margin-bottom: 20px;
+    }
+
+
+
 }
