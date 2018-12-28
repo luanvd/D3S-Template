@@ -438,10 +438,11 @@
             p{
                 margin-bottom: 0px;
                 font-size: 18px;
-                font-weight: 100;
                 font-family: raleway, sans-serif;
                 text-align: justify;
                 margin-top: 37px;
+                font-weight: 400;
+                color: black;
             }
             .font-fix {
                 font-weight: 400;
@@ -629,6 +630,7 @@ img {
         line-height: 24px;
         p {
             text-align: center;
+            font-family: raleway, sans-serif;
         }
     }
     .single-cat-widget {
@@ -657,6 +659,8 @@ img {
             h4 {
                 color: #000;
                 font-size: 24px;
+                font-family: raleway, sans-serif;
+                font-weight: bold;
             }
             span {
                 display: inline-block;
@@ -1025,10 +1029,10 @@ section#section19 {
     }
     p {
         font-family: raleway, sans-serif;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 29px;
         color: #999999;
-        line-height: 34px;
+        line-height: 30px;
         font-weight: 400;
     }
 

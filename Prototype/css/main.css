@@ -2246,10 +2246,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   .feature-area .feature-right .single-feature p {
     margin-bottom: 0px;
     font-size: 18px;
-    font-weight: 100;
     font-family: raleway, sans-serif;
     text-align: justify;
-    margin-top: 37px; }
+    margin-top: 37px;
+    font-weight: 400;
+    color: black; }
   .feature-area .feature-right .single-feature .font-fix {
     font-weight: 400;
     color: black; }
@@ -2395,7 +2396,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 29px 5px 20px 5px;
   line-height: 24px; }
   .top-category-widget-area .content p {
-    text-align: center; }
+    text-align: center;
+    font-family: raleway, sans-serif; }
 
 .top-category-widget-area .single-cat-widget {
   position: relative;
@@ -2422,7 +2424,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     position: absolute; }
     .top-category-widget-area .single-cat-widget .content-details h4 {
       color: #000;
-      font-size: 24px; }
+      font-size: 24px;
+      font-family: raleway, sans-serif;
+      font-weight: bold; }
     .top-category-widget-area .single-cat-widget .content-details span {
       display: inline-block;
       background: #fff;
@@ -2730,10 +2734,10 @@ section#section19 {
     margin: 20px 0px; }
   .pro-content p {
     font-family: raleway, sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 29px;
     color: #999999;
-    line-height: 34px;
+    line-height: 30px;
     font-weight: 400; }
 
 #tab-2 img {
