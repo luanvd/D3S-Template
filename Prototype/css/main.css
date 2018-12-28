@@ -1989,7 +1989,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     z-index: 9;
     bottom: 0px;
     margin: auto;
-    left: 0px;
+    left: 15%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
