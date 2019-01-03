@@ -938,6 +938,9 @@ section#section19 {
     background-size:cover;
 }
 
+.slick-slide img {
+    width: 100%;
+}
 .about-content {
     margin-top: 98px;
     padding: 90px 0px;
@@ -1302,7 +1305,9 @@ iframe {
 }
 
 @media only screen and (max-width:667px) {
-   
+    .banner-area .banner-img {
+        width: 60%;
+    }
 }
 
 @media only screen and (max-width:736px) {
