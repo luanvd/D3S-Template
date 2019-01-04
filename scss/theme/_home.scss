@@ -1198,6 +1198,15 @@ iframe {
 
 
 @media only screen and (max-width:1199px) {
+    .banner-area {
+        margin-top: 74px;
+    }
+
+    .single-cta .title-cta-area-fix2::after {
+        bottom: -19px;
+    }
+
+
 
     .nav-menu a {
         font-size: 16px;
@@ -1225,8 +1234,8 @@ iframe {
         line-height: 20px;
     }
 
-    .top-category-widget-area .single-cat-widget .content-details h4 {
-        font-size: 20px;
+    #section19 .single-cat-widget .content-details h4 {
+        font-size: 11px;
     }
     .single-cta {
         padding: 10px 50px;
@@ -1278,6 +1287,15 @@ iframe {
 }
 
 @media only screen and (max-width:992px){ 
+
+    #section19 .single-cat-widget .content-details h4 {
+        font-size: 20px;
+    }
+
+    #section19 {
+        background: #ccc;
+        margin-bottom: 20px;
+    }
     .banner-area {
         margin-top: 43px;
     }
