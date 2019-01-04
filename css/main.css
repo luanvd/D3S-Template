@@ -2899,6 +2899,34 @@ iframe {
   .cta-area2 .content p {
     line-height: 20px; } }
 
+@media only screen and (max-width: 992px) {
+  .banner-area {
+    margin-top: 43px; }
+  .single-cta .title-cta-area {
+    font-size: 18px;
+    text-align: center !important; }
+  .cta-area {
+    background-size: cover; }
+  .single-cta p {
+    text-align: left; }
+  .morelink {
+    display: block; }
+  .px-40 {
+    margin-bottom: 20px; }
+  .single-cta .title-cta-area-fix3 {
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center !important; }
+  .single-cta .title-cta-area-fix2::after {
+    content: "";
+    width: 125px;
+    position: absolute;
+    bottom: -35px;
+    height: 2px;
+    right: 0;
+    z-index: -1;
+    background: white; } }
+
 @media only screen and (max-width: 767px) {
   .feature-area .feature-left {
     text-align: center;
