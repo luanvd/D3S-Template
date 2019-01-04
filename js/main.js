@@ -117,6 +117,7 @@ $(document).ready(function () {
     //------- Show/hile content  js --------// 
 
     var showChar = 100;  // How many characters are shown by default
+    var showChar1 = 750 ; 
     var ellipsestext = "...";
     var moretext = "read more >";
     var lesstext = "read less";
@@ -128,6 +129,18 @@ $(document).ready(function () {
 
             var c = content.substr(0, showChar);
             var h = content.substr(showChar);
+            var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+            $(this).html(html);
+        }
+    });
+
+
+    $('.more-1').each(function () {
+        var content = $(this).html();
+        if (content.length > showChar1) {
+
+            var c = content.substr(0, showChar1);
+            var h = content.substr(showChar1);
             var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
             $(this).html(html);
         }
