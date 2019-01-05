@@ -3009,7 +3009,7 @@ iframe {
 @media only screen and (max-width: 480px) {
   .top-category-widget-area .single-cat-widget .content-details h4 {
     color: #000;
-    font-size: 14px; }
+    font-size: 14px !important; }
   .container-fluid-fix {
     padding: 0px; }
   .single-cta .title-cta-area-fix {
@@ -3024,6 +3024,11 @@ iframe {
     padding: 0; }
   #contact {
     padding: 0px; } }
+
+@media only screen and (max-width: 320px) {
+  .top-category-widget-area .single-cat-widget .content-details h4 {
+    color: #000;
+    font-size: 12px !important; } }
 
 /* =================================== */
 /*  Footer Styles

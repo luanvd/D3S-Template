@@ -1461,7 +1461,7 @@ iframe {
 
     .top-category-widget-area .single-cat-widget .content-details h4 {
         color: #000;
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .container-fluid-fix {
@@ -1506,7 +1506,10 @@ iframe {
 }
 
 @media only screen and (max-width: 320px) {
-
+    .top-category-widget-area .single-cat-widget .content-details h4 {
+        color: #000;
+        font-size: 12px !important;
+    }
 }
 
 
