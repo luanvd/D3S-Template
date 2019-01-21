@@ -101,15 +101,15 @@ $(document).ready(function () {
     });
 
     //------- Validation form  js --------// 
-    $(".single-input").keyup(function () {
+    // $(".single-input").keyup(function () {
 
-        if ($(this).val() == "") {
-            $(this).css("background", "#f3f3f3");
-        } else {
-            console.log("oke");
-            $(this).css("background", "white");
-        }
-    });
+    //     if ($(this).val() == "") {
+    //         $(this).css("background", "#f3f3f3");
+    //     } else {
+    //         console.log("oke");
+    //         $(this).css("background", "white");
+    //     }
+    // });
 
     //------- Moaldal  js --------// 
     $("#myModal").modal('show');
@@ -119,8 +119,8 @@ $(document).ready(function () {
     var showChar = 100;  // How many characters are shown by default
     var showChar1 = 750 ; 
     var ellipsestext = "...";
-    var moretext = "read more >";
-    var lesstext = "read less";
+    var moretext = "en savoir plus >";
+    var lesstext = "lire moins";
 
 
     $('.more').each(function () {

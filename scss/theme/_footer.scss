@@ -131,7 +131,7 @@
         .single-input,
         .single-textarea {
             border: 1px solid #ccc;
-            background: #f3f3f3 ;
+            background:white;
             font-family: raleway, sans-serif;
             color: #666666;
             &:hover {
@@ -140,8 +140,10 @@
         }
     
         label {
-            color: #666666; 
+            color: rgba(0, 0, 0, 0.7686274509803922);
             font-family: raleway, sans-serif;
+            font-weight: 500;
+            font-size: 18px;
         }
 
         .genric-btn {
@@ -154,8 +156,8 @@
             font-family: raleway, sans-serif;
             border-radius: 2px;
             color: #FFFFFF;
-            font-size: 14px;
-            font-weight: 100;
+            font-size: 18px;
+            font-weight: 500;
             &:hover {
                 background: #141414
             }
