@@ -4,7 +4,7 @@
 
 
 .section-gap {
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
 
@@ -58,6 +58,7 @@
         }
     }
 }
+
 
 .primary-btn.squire {
     border-radius: 0px!important;
@@ -121,7 +122,7 @@
     }
     background-size: cover;
     .overlay-bg {
-        background-color: rgba(#000, .2);
+        background-color: rgba(8, 8, 8, 0.32);;
     }
     margin-top: 100px;
 }
@@ -264,7 +265,7 @@
         position:relative;
     }
     .overlay-bg{
-        background-color:rgba(#5F4D5F, .8);
+        background-color:rgba(8, 8, 8, 0.32);
        
     }
     .primary-btn{
@@ -624,6 +625,31 @@ img {
 .p-100 {
     padding: 100px;
 }
+
+.title-section {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-family: raleway, sans-serif;
+}
+
+.groupt-title {
+    display: inline-block;
+    background: #f3f3f3;
+    position: relative;
+    z-index: 9;
+    padding: 0px 20px;
+    span {
+        color: black;
+    }
+    .title-section:first-child {
+        span {
+            font-size: 30px;
+        }
+    }
+    
+}
 /*-------- End calculation Area -------------*/
 
 /*============ Start Blog Home Styles  =============*/
@@ -634,11 +660,14 @@ img {
     .content {
         background: white;
         height: 100%;
-        padding: 29px 5px 20px 5px;
+        padding: 29px 10px 20px 10px;
         line-height: 24px;
         p {
             text-align: center;
             font-family: raleway, sans-serif;
+            font-size: 16px;
+            color: black;
+            font-weight: 400;
         }
     }
     .single-cat-widget {
@@ -646,7 +675,7 @@ img {
             padding: 0;
         }
         .overlay-bg {
-            background: rgba(255, 255, 255, 0);
+            background: rgba(0, 0, 0, 0.28);
             margin: 0;
             @include transition();
         }
@@ -1110,6 +1139,7 @@ iframe {
 .morelink {
     font-size: 14px;
     color: #f3a306;
+    display: block;
     &:hover {
         color: #f3a306;
         opacity: 0.8;
@@ -1196,6 +1226,9 @@ iframe {
     top: 5px;
 }
 
+#section9 {
+    margin-top: 50px;
+}
 
 @media only screen and (max-width:1199px) {
     .banner-area {
@@ -1335,6 +1368,22 @@ iframe {
 
 @media only screen and (max-width:767px){
 
+    .title-section {
+        font-size: 18px;
+    }
+
+    .groupt-title {
+
+        span {
+            color: black;
+        }
+        .title-section:first-child {
+            span {
+                font-size: 16px;
+            }
+        }
+        
+    }
     .feature-area .feature-left {
         text-align: center;
         margin-bottom: 10px;
