@@ -2975,6 +2975,8 @@ iframe {
 .wrap-section {
   position: relative;
   padding-bottom: 100px; }
+  .wrap-section .content p {
+    margin-top: 0px; }
   .wrap-section .cta-area2 .content p {
     margin-bottom: 0px; }
   .wrap-section .cta-area3 .content p {
