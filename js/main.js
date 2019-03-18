@@ -101,15 +101,15 @@ $(document).ready(function () {
     });
 
     //------- Validation form  js --------// 
-    $(".single-input").keyup(function () {
+    // $(".single-input").keyup(function () {
 
-        if ($(this).val() == "") {
-            $(this).css("background", "#f3f3f3");
-        } else {
-            console.log("oke");
-            $(this).css("background", "white");
-        }
-    });
+    //     if ($(this).val() == "") {
+    //         $(this).css("background", "#f3f3f3");
+    //     } else {
+    //         console.log("oke");
+    //         $(this).css("background", "white");
+    //     }
+    // });
 
     //------- Moaldal  js --------// 
     $("#myModal").modal('show');
@@ -117,10 +117,11 @@ $(document).ready(function () {
     //------- Show/hile content  js --------// 
 
     var showChar = 100;  // How many characters are shown by default
-    var showChar1 = 750 ; 
+    var showChar1 = 750 ;
+    var showChar2 = 220 ; 
     var ellipsestext = "...";
-    var moretext = "read more >";
-    var lesstext = "read less";
+    var moretext = "en savoir plus >";
+    var lesstext = "lire moins";
 
 
     $('.more').each(function () {
@@ -141,6 +142,18 @@ $(document).ready(function () {
 
             var c = content.substr(0, showChar1);
             var h = content.substr(showChar1);
+            var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+            $(this).html(html);
+        }
+    });
+
+
+    $('.more-2').each(function () {
+        var content = $(this).html();
+        if (content.length > showChar2) {
+
+            var c = content.substr(0, showChar2);
+            var h = content.substr(showChar2);
             var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
             $(this).html(html);
         }
