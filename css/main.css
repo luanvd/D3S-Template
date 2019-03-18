@@ -2729,6 +2729,10 @@ section#section19 {
   width: 60%;
   margin: 0px auto; }
 
+#section17 .single-cta {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
 #section17 .right-content {
   text-align: right; }
   #section17 .right-content h3 span {
@@ -2738,6 +2742,17 @@ section#section19 {
     background: #7d406c;
     display: inline-block;
     padding: 5px; }
+
+#section14 {
+  margin-bottom: 0px; }
+
+#section16 {
+  margin: 0px;
+  padding-bottom: 15px; }
+
+#section15 .single-cta {
+  padding-top: 0px;
+  padding-bottom: 0px; }
 
 #section15 .left-content {
   text-align: right; }
@@ -2959,7 +2974,11 @@ iframe {
 
 .wrap-section {
   position: relative;
-  padding-bottom: 200px; }
+  padding-bottom: 100px; }
+  .wrap-section .cta-area2 .content p {
+    margin-bottom: 0px; }
+  .wrap-section .cta-area3 .content p {
+    margin-bottom: 0px; }
   .wrap-section .video {
     width: 100%;
     position: absolute;
@@ -2976,12 +2995,16 @@ iframe {
       object-fit: cover; }
 
 #section14 {
-  background: transparent; }
+  background: transparent;
+  padding-bottom: 0px;
+  padding-top: 15px; }
 
 #section16 {
-  background: transparent; }
+  background: transparent;
+  padding-top: 15px; }
 
 #section17 {
+  margin-top: 0px !important;
   background: none;
   position: relative; }
   #section17 .video {
