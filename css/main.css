@@ -2284,7 +2284,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 50px; }
 
 .aclculation-area {
-  background: rgba(0, 0, 0, 0.7) url(../img/section1-bg.png) no-repeat center center;
+  background: #7d406c url(../img/section1-bg.png) no-repeat center center;
   background-attachment: fixed;
   margin-top: 50px; }
   .aclculation-area .overlay-bg {
