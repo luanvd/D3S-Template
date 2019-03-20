@@ -112,7 +112,7 @@ $(document).ready(function () {
     // });
 
     //------- Moaldal  js --------// 
-    $("#myModal").modal('show');
+    // $("#myModal").modal('show');
 
     //------- Show/hile content  js --------// 
 
