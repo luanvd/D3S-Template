@@ -3101,6 +3101,8 @@ iframe {
     background: white; } }
 
 @media only screen and (max-width: 767px) {
+  .nav-tab {
+    width: 20%; }
   #section11 .pc-content {
     display: none; }
   #section11 .more {
