@@ -3100,6 +3100,10 @@ iframe {
     z-index: -1;
     background: white; } }
 
+@media only screen and (max-width: 768px) {
+  .nav-tab {
+    width: 15%; } }
+
 @media only screen and (max-width: 767px) {
   .nav-tab {
     width: 20%; }
